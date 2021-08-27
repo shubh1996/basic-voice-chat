@@ -1,0 +1,6 @@
+<div style="margin: 100px;">
+    <h1>Voice recognition</h1>
+    <button style="margin: 10px;" *ngIf="!start" (click)="startService();start=!start">Start</button>
+    <button style="margin: 10px;" *ngIf="start" (click)="stopService();start=!start">Stop</button>
+    <p>{{service.text}}</p>
+</div>
